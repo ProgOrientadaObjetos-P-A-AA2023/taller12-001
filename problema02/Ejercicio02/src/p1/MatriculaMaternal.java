@@ -7,6 +7,14 @@ public class MatriculaMaternal extends TipoMatricula {
     private double costoDesayunos;
     private double costoAlmuerzo;
     private double costoMedico;
+    
+    public MatriculaMaternal(double cD, double cA, double cM){
+        
+        costoDesayunos = cD;
+        costoAlmuerzo = cA;
+        costoMedico = cM;
+    
+    }
 
     public void establecerCostoDesayunos(double c) {
         costoDesayunos = c;

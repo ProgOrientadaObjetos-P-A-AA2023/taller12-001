@@ -8,6 +8,15 @@ public class MatriculaEscuela extends TipoMatricula{
     private double costoDeportes;
     private double costoFolletos;
     private double costoUniformes;
+    
+    public MatriculaEscuela(double cL, double cD, double cF, double cU){
+    
+        costoLibros = cL;
+        costoDeportes = cD;
+        costoFolletos = cF;
+        costoUniformes = cU;
+    
+    }
 
     public void establecerCostoLibros(double c) {
         costoLibros = c;

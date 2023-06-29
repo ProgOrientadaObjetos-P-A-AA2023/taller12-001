@@ -7,6 +7,14 @@ public class MatriculaJardin extends TipoMatricula {
     private double costoDesayunos;
     private double costoLibros;
     private double costoPaseos;
+    
+    public MatriculaJardin(double cD, double cL, double cP){
+    
+        costoDesayunos = cD;
+        costoLibros = cL;
+        costoPaseos = cP;
+    
+    }
 
     public void establecerCostoDesayunos(double f) {
         

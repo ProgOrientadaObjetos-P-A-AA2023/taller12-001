@@ -8,6 +8,14 @@ public class MatriculaCampamento extends TipoMatricula {
     private double costoComida;
     private double costoInstructores;
     
+    public MatriculaCampamento(double cT, double cC, double cI){
+        
+        costoTransporte = cT;
+        costoComida = cC;
+        costoInstructores = cI;
+    
+    }
+    
     @Override
     public void calcularPromedioMatriculas(){
         promedioMatriculas = costoTransporte + costoComida + 

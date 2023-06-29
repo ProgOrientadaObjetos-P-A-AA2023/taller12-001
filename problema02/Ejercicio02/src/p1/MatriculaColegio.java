@@ -9,6 +9,15 @@ public class MatriculaColegio extends TipoMatricula {
     private double costoUniformes;
     private double costoLaboratorios;
     
+    public MatriculaColegio(double cD, double cF, double cU, double cL){
+        
+        costoDeportes = cD;
+        costoFolletos = cF;
+        costoUniformes = cU;
+        costoLaboratorios = cL;
+    
+    }
+    
     @Override
     public void calcularPromedioMatriculas(){
         promedioMatriculas = costoDeportes + costoFolletos + 
