@@ -12,40 +12,16 @@ import p1.MatriculaColegio;
  *
  * @author reroes
  */
-public class TipoMatricula {
-    private double promedioMatriculas;
-    private MatriculaCampamento campamento;
-    private MatriculaColegio colegio;
-    private MatriculaEscuela escuela;
-    private MatriculaJardin jardin;
-    private MatriculaMaternal maternal;
-    private MatriculaMaternal maternal2;
+public abstract class TipoMatricula {
     
-    public void establecerMatriculaCampamento(MatriculaCampamento c){
-        campamento = c;
-    }
+    protected double promedioMatriculas;
     
-    public void establecerMatriculaColegio(MatriculaColegio c){
-        colegio = c;
-    }
+    public abstract void calcularPromedioMatriculas();
     
-    public MatriculaCampamento obtenerMatriculaCampamento(){
-        return campamento;
-    }
-    
-    public MatriculaColegio obtenerMatriculaColegio(){
-        return colegio;
-    }
-    
-    public void establecerPromedioTarifas(){
-        promedioMatriculas = (obtenerMatriculaCampamento().obtenerTarifa() + 
-                obtenerMatriculaColegio().obtenerTarifa())/2;
+    public double obtenerPromedioMatriculas(){
+        
+        return promedioMatriculas;
         
     }
-    
-    public double obtenerPromedioTarifas(){
-        return promedioMatriculas;
-    }
-    
     
 }

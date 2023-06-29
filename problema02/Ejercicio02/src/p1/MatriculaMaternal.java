@@ -9,7 +9,7 @@ package p1;
  *
  * @author reroes
  */
-public class MatriculaMaternal {
+public class MatriculaMaternal extends TipoMatricula{
     private double tarifa;
     
         

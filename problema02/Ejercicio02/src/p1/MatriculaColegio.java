@@ -9,7 +9,7 @@ package p1;
  *
  * @author reroes
  */
-public class MatriculaColegio {
+public class MatriculaColegio extends TipoMatricula {
     private double tarifa;
     
     public void establecerTarifa(){
