@@ -16,10 +16,10 @@ public class TipoMatricula {
     private double promedioMatriculas;
     private MatriculaCampamento campamento;
     private MatriculaColegio colegio;
-    // private MatriculaEscuela escuela;
-    // private MatriculaJardin jardin;
-    // private MatriculaMaternal maternal;
-    // private MatriculaMaternal maternal2;
+    private MatriculaEscuela escuela;
+    private MatriculaJardin jardin;
+    private MatriculaMaternal maternal;
+    private MatriculaMaternal maternal2;
     
     public void establecerMatriculaCampamento(MatriculaCampamento c){
         campamento = c;
