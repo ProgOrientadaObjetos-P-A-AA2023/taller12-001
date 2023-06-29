@@ -1,24 +1,40 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package p1;
 
-/**
- *
- * @author reroes
- */
-public class MatriculaMaternal extends TipoMatricula{
-    private double tarifa;
+import p2.TipoMatricula;
+
+public class MatriculaMaternal extends TipoMatricula {
     
-        
-    public void establecerTarifa(){
-        // tarifa = costo desayunos + costo almuerzo + costo medico
-        tarifa = 50.2 + 40.2 + 80.2;
+    private double costoDesayunos;
+    private double costoAlmuerzo;
+    private double costoMedico;
+
+    public void establecerCostoDesayunos(double c) {
+        costoDesayunos = c;
     }
-        
-    public double obtenerTarifa(){
-        return tarifa;
+
+    public void establecerCostoAlmuerzo(double c) {
+        costoAlmuerzo = c;
     }
+
+    public void establecerCostoMedico(double c) {
+        costoMedico = c;
+    }
+    
+    @Override
+    public void calcularPromedioMatriculas(){
+        promedioMatriculas = costoDesayunos + costoAlmuerzo + costoMedico;
+    }
+
+    public double obtenerCostoDesayunos() {
+        return costoDesayunos;
+    }
+
+    public double obtenerCostoAlmuerzo() {
+        return costoAlmuerzo;
+    }
+
+    public double obtenerCostoMedico() {
+        return costoMedico;
+    }
+    
 }
