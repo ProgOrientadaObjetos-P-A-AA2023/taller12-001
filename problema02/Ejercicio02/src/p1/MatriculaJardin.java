@@ -1,8 +1,8 @@
 package p1;
 
-import p2.TipoMatricula;
+import p2.Matricula;
 
-public class MatriculaJardin extends TipoMatricula {
+public class MatriculaJardin extends Matricula {
     
     private double costoDesayunos;
     private double costoLibros;
@@ -35,9 +35,9 @@ public class MatriculaJardin extends TipoMatricula {
     }
     
     @Override
-    public void calcularPromedioMatriculas(){
+    public void calcularMatricula(){
         
-        promedioMatriculas = costoDesayunos + costoLibros + costoPaseos;
+        matricula = costoDesayunos + costoLibros + costoPaseos;
       
     }
 
